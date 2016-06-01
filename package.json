@@ -1,0 +1,29 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run css && elm-live src/Main.elm --output=elm.js --open",
+    "build": "npm run css && elm-make src/Main.elm --output=elm.js",
+    "css": "elm-css styles/Stylesheets.elm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoeffel/boilerplate.git"
+  },
+  "author": "stoeffel",
+  "license": "BSD3",
+  "bugs": {
+    "url": "https://github.com/stoeffel/boilerplate/issues"
+  },
+  "homepage": "https://github.com/stoeffel/boilerplate#readme",
+  "dependencies": {
+    "elm": "^0.17.0"
+  },
+  "devDependencies": {
+    "elm-css": "^0.5.0",
+    "elm-live": "^2.2.1"
+  }
+}
